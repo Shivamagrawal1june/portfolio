@@ -77,3 +77,12 @@ function openGmail() {
 
   window.open(url, "_blank");
 }
+
+function downloadCV() {
+  const link = document.createElement("a");
+  link.href = "Resume.pdf"; // Path to your resume file
+  link.download = "Shivam Resume.pdf"; // Name for the downloaded file
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
