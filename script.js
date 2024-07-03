@@ -83,13 +83,11 @@ type();
 // Function to open Gmail with a pre-filled recipient
 function openGmail() {
   const email = "shivamagrawal1june@gmail.com";
-  const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+  const subject = encodeURIComponent("Your Subject Here"); // Optional
+  const body = encodeURIComponent("Your email body here"); // Optional
+  const url = `intent://mail.google.com/mail/?view=cm&fs=1&to=${email}&subject=${subject}&body=${body}#Intent;package=com.google.android.gm;end`;
 
-  if (navigator.userAgent.match(/iPhone|iPad|iPod|Android/i)) {
-    window.location.href = url;
-  } else {
-    window.open(url, "_blank");
-  }
+  window.location.href = url;
 }
 
 // Function to download CV
