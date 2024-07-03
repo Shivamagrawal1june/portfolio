@@ -69,3 +69,11 @@ function typeJs() {
 setInterval(() => {
   typeJs();
 }, 200);
+
+function openGmail() {
+  const email = "shivamagrawal1june@gmail.com";
+
+  const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+
+  window.open(url, "_blank");
+}
