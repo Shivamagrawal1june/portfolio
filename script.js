@@ -83,11 +83,8 @@ type();
 // Function to open Gmail with a pre-filled recipient
 function openGmail() {
   const email = "shivamagrawal1june@gmail.com";
-  const subject = encodeURIComponent("Your Subject Here"); // Optional
-  const body = encodeURIComponent("Your email body here"); // Optional
-  const url = `intent://mail.google.com/mail/?view=cm&fs=1&to=${email}&subject=${subject}&body=${body}#Intent;package=com.google.android.gm;end`;
-
-  window.location.href = url;
+  const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+  window.open(url, "_blank");
 }
 
 // Function to download CV
