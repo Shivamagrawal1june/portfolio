@@ -125,32 +125,7 @@ nav.sticky .menu-btn {
   flex-direction: column;
   justify-content: center;
 }
-/* Typing Animation */
-.typing-animation {
-  overflow: hidden; /* Ensures overflow is hidden */
-  white-space: nowrap; /* Prevents wrapping */
-  display: inline-block; /* Allows for animation */
-  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-right-color: transparent;
-  }
-  50% {
-    border-right-color: #000; /* Adjust color as needed */
-  }
-}
 .home .text-one {
   font-size: 25px;
   color: rgb(20, 90, 202);
@@ -533,4 +508,18 @@ footer .text span a:hover {
     font-size: 50px;
     color: #4070f4;
   }
+}
+
+/* type js style  */
+.typeJsWrapper {
+  height: 200px;
+  padding: 30px 0px 0px 0px;
+}
+
+.typeJsWrapper .typeJsText {
+  color: rgb(20, 90, 202);
+  font-size: 72px;
+  display: inline-block;
+  padding: 0;
+  border-right: 1px solid #414141;
 }
